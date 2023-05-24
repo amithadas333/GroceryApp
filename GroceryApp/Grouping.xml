@@ -2,9 +2,9 @@
 	<test name="My test">
 		<groups>
 			<run>
-				<exclude name="Critical">
+				<include name="Critical">
 					
-				</exclude>
+				</include>
 			</run>
 		</groups>
 		<classes>
