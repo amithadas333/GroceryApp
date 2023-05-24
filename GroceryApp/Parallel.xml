@@ -1,0 +1,15 @@
+<suite name="MySuite" parallel= "tests" thread-count="2">
+	<test name="chrometest">
+		
+		<parameter name="Browser" value="chrome"></parameter>
+		<classes>
+			<class name="testCases.ManageExpenseViewMoreDynamicTableTestCases"></class>
+		</classes>
+	</test>
+	<test name="Edgetest">
+		<parameter name="Browser" value="edge"></parameter>
+		<classes>
+			<class name="testCases.ManageExpenseViewMoreDynamicTableTestCases"></class>
+		</classes>
+	</test>
+</suite>

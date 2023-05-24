@@ -1,0 +1,24 @@
+<suite name="My Suite">
+	<test name="ChromeTest">
+		<groups>
+			<run>
+				<include name="Critical"></include>
+			</run>
+		</groups>
+		<parameter name="Browser" value="chrome"></parameter>
+		<classes>
+			<class name="testCases.LoginTestCases"></class>
+		</classes>
+	</test>
+	<test name="Edge">
+		<groups>
+			<run>
+				<include name="Critical"></include>
+			</run>
+		</groups>
+		<parameter name="Browser" value="edge"></parameter>
+		<classes>
+			<class name="testCases.LoginTestCases"></class>
+		</classes>
+	</test>
+</suite>
