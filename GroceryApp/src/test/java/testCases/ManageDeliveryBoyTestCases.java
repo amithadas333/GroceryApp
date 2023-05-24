@@ -16,7 +16,7 @@ public class ManageDeliveryBoyTestCases extends BaseClass {
 	ManageDeliveryBoyExcelRead me;
 
 	@Test
-	public void f() throws IOException, InterruptedException {
+	public void verifyAddDeliveryBoyAlertMessage() throws IOException, InterruptedException {
 		lp = new LoginPage(driver);
 
 		lp.performLogin(ExcelRead.readStringData(1, 0, "Sheet1"), ExcelRead.readStringData(1, 1, "Sheet1"));

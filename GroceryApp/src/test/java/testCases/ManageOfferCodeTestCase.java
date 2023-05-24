@@ -37,13 +37,14 @@ public class ManageOfferCodeTestCase extends BaseClass {
 		Assert.assertEquals(actualResult, expectedResult, Constants.ManageOrdersAssignDeliveryBoyAlertMessageOutPut);
 
 	}
+
 	@Test
 	public void verifyManageOrdersChangeDeliveryDateAlertMessage() throws InterruptedException {
 		lp = new LoginPage(driver);
 		try {
 			lp.performLogin(ExcelRead.readStringData(1, 0, "Sheet1"), ExcelRead.readStringData(1, 1, "Sheet1"));
 		} catch (IOException e) {
-			
+
 			e.printStackTrace();
 		}
 		mc = new ManageOfferCode(driver);
@@ -52,12 +53,12 @@ public class ManageOfferCodeTestCase extends BaseClass {
 		mc.clickManageOrders();
 		mc.clickChangeDeliveryDate();
 		mc.clickDeliveryDate("28-04-2023");
-		//mc.clickOnTime("12:00am");
-	
-		//mc.clickOnTimeBetween("12:00am");
-	
+		mc.clickOnTime("12:00am");
+
+		mc.clickOnTimeBetween("12:00am");
+
 		mc.updateon();
 
 	}
-		
+
 }

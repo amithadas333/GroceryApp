@@ -5,9 +5,10 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import elementRepository.LoginPage;
 import elementRepository.ExpenseCategoryDynamicTable;
+import elementRepository.LoginPage;
 import utilities.ExcelRead;
+
 
 
 
@@ -36,7 +37,7 @@ public class ExpenseCategoryDynamicTableTestCases extends BaseClass {
 
 	
 	@Test
-	public void click() throws IOException
+	public void verifyExpenseCategoryAlertMessage() throws IOException
 	{
 		lp = new LoginPage(driver);
 		lp.enterUserName(ExcelRead.readStringData(1, 0,"Sheet1"));

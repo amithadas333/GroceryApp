@@ -30,11 +30,8 @@ public class ManageExpenseInputAllDetailsTestCases extends BaseClass {
 		mi.clickOnNew();
 		mi.clickOnUserDropDown();
 		mi.clickOnNext();
-		// mi.sds();
 
-		mi.selectDate("01-06-2023");
-
-		// mi.getFirstFiveTabelDetails();
+		mi.selectDate("25-05-2023");
 
 		mi.clickOnCategory();
 		mi.clickOnOrderId();

@@ -52,7 +52,7 @@ public class ManageProductTestCases extends BaseClass {
 
 		mp.chooseFiles();
 
-	//	mp.chooseNextImage("\\src\\main\\resources\\FileUpload\\istockphotos.jpg");
+		// mp.chooseNextImage("\\src\\main\\resources\\FileUpload\\istockphotos.jpg");
 		mp.chooseNextImage();
 		mp.clickSaveButton();
 		String actual = mp.AlertMessage();

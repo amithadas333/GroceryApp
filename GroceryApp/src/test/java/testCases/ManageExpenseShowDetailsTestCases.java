@@ -8,11 +8,11 @@ import elementRepository.LoginPage;
 
 import elementRepository.ManageExpenseShowDetails;
 
-
 public class ManageExpenseShowDetailsTestCases extends BaseClass {
 	LoginPage lp;
-	
+
 	ManageExpenseShowDetails me;
+
 	@Test
 	public void verifyAddExpenseText() {
 		lp = new LoginPage(driver);
@@ -23,7 +23,7 @@ public class ManageExpenseShowDetailsTestCases extends BaseClass {
 		me.clickManageExpense();
 		me.clickOnManageExpenseRadio();
 		me.clickOnNew();
-		
+
 		String actual = me.getTextForAddExpensePage();
 		String expected = "Add Expense";
 		Assert.assertEquals(actual, expected, "invalid text");
@@ -43,6 +43,7 @@ public class ManageExpenseShowDetailsTestCases extends BaseClass {
 		Assert.assertEquals(actual, expected, Constants.ManageExpenseShowDetailsOutPut);
 
 	}
+
 	@Test
 	public void verifyListExpenseTitle() throws InterruptedException {
 		lp = new LoginPage(driver);
@@ -53,14 +54,12 @@ public class ManageExpenseShowDetailsTestCases extends BaseClass {
 		me.clickManageExpense();
 		me.clickOnManageExpenseRadio();
 		me.getViewMoreelement();
-		
-		boolean actual=	me.click_Sub_Manageexpense_ViewMore_button();
 
-		
+		boolean actual = me.click_Sub_Manageexpense_ViewMore_button();
+
 		boolean expected = true;
 		Assert.assertEquals(actual, expected, "inavlid");
 
 	}
 
-	
 }

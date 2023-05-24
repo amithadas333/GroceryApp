@@ -23,6 +23,7 @@ public class LoginTestCases extends BaseClass {
 		Assert.assertEquals(actual, expected, "not expected output");
 
 	}
+
 	@Test
 	public void verifyLoginBackgroundColor() {
 		lp = new LoginPage(driver);
@@ -30,8 +31,6 @@ public class LoginTestCases extends BaseClass {
 		String actualResult = lp.getBackGroundColorSignIn();
 		Assert.assertEquals(actualResult, expectedResult, "not expected output");
 	}
-
-	
 
 	public void verifyLoginBorderColor() {
 		lp = new LoginPage(driver);
@@ -41,13 +40,13 @@ public class LoginTestCases extends BaseClass {
 
 	}
 
-	@Test(groups = "Critical")
+	@Test(groups = {"Critical"})
 
 	public void verifySucessFullLogin() throws IOException {
 
 		lp = new LoginPage(driver);
-		lp.enterUserName(ExcelRead.readStringData(1, 0,"Sheet1"));
-		lp.enterPassword(ExcelRead.readStringData(1, 1,"Sheet1"));
+		lp.enterUserName(ExcelRead.readStringData(1, 0, "Sheet1"));
+		lp.enterPassword(ExcelRead.readStringData(1, 1, "Sheet1"));
 		String acutal = lp.signIn();
 		String expected = "7rmart supermarket";
 		Assert.assertEquals(acutal, expected, "not expected output");

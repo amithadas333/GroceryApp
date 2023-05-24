@@ -36,13 +36,10 @@ public class LoginPage {
 	WebElement signInClick;
 	@FindBy(xpath = "//span[text()='7rmart supermarket']")
 	WebElement findTextAfterLogin;
-	
+
 	@FindBy(xpath = "//h5[text()= Alert!']")
 	WebElement unSuccessFullLogin;
 
-
-	
-	
 	public String signInText() {
 		return gu.getElementText(signIn);
 	}
@@ -54,11 +51,6 @@ public class LoginPage {
 	public String getELemen3Text() {
 		return gu.getElementText(element3);
 	}
-
-//	public String getLoginText()
-//	{
-//		return gu.getLoginDetails(signInClick);
-//	}
 
 	public String getBackGroundColorSignIn() {
 		return gu.getElementStyleProperty(signIn, "background-color");
@@ -81,18 +73,15 @@ public class LoginPage {
 
 		return gu.getElementText(findTextAfterLogin);
 	}
-	
-	public void performLogin(String user,String password1) {
+
+	public void performLogin(String user, String password1) {
 		enterUserName(user);
 		enterPassword(password1);
 		signIn();
-//		userName.sendKeys(user);
-//		password.sendKeys(password1);
-//		signInClick.click();
+
 	}
-	
-	public String loginInvalid()
-	{
+
+	public String loginInvalid() {
 		return gu.getElementText(unSuccessFullLogin);
 	}
 

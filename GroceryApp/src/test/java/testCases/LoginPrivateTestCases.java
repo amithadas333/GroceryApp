@@ -12,7 +12,7 @@ public class LoginPrivateTestCases extends BaseClass {
 	PrivateLogin mu;
 
 	@Test
-	public void getLoginDetails() {
+	public void verifyLoginDetails() {
 
 		mu = new PrivateLogin(driver);
 		mu.setUserName("admin");

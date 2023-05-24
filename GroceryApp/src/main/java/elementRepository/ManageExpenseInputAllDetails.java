@@ -3,6 +3,7 @@ package elementRepository;
 import java.awt.AWTException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -79,45 +80,23 @@ public class ManageExpenseInputAllDetails {
 		gu.getElementClick(selectDate);
 	}
 
-//	public void sds() throws InterruptedException {
-//		String value = "False";
-//		while (value == "False") {
-//			if (driver.findElements(By.xpath("//div[@class='datepicker-days']//td[contains(text(),'1')]")).size() > 0) {
-//				driver.findElement(By.xpath("//div[@class='datepicker-days']//td[contains(text(),'1')]")).click();
-//				value = "True";
-//			}
-//
-//			else {
-//				Thread.sleep(5000);
-//				driver.findElement(By.xpath("//div[@class='datepicker-days']//th[@class='next'][1]"));
-//
-//			}
-//		}
-//	}
-	
-	public void selectDate(String date) throws InterruptedException
-	{
+	public void selectDate(String date) throws InterruptedException {
 		selectDate.clear();
-		gu.mediumDelay();
-		selectDate.sendKeys(date);
 		
+		selectDate.sendKeys(date);
+		selectDate.sendKeys(Keys.TAB);
+
 	}
-//
+
 	public void clickOnUserDropDown() {
 		gu.getDropDown(selectUserDropDown, 4);
 	}
 
-	public void clickOnselectDate() {
-		gu.getElementClick(selectDate);
-	}
+	public void clickOnselectDate(String date) {
 
-//	public void getFirstFiveTabelDetails() {
-//		int rowValue = gu.clickdynamicTable(driver, "//table[@class='table-condensed']//tbody//tr//td[1]", "4");
-//		String locator = "//table[@class='table-condensed']//tbody//tr[" + rowValue + "]//td[5]";
-//		WebElement printAllRowValues1 = driver.findElement(By.xpath(locator));
-//		gu.getElementClick(printAllRowValues1);
-//
-//	}
+		selectDate.sendKeys(date);
+		selectDate.sendKeys(Keys.ENTER);
+	}
 
 	public void clickOnCategory() {
 		gu.getDropDown(selectCategory, 6);
@@ -156,6 +135,7 @@ public class ManageExpenseInputAllDetails {
 		try {
 			gu.getFileUpload(driver, chooseFile,
 					System.getProperty("user.dir") + "\\src\\main\\resources\\FileUpload\\istockphoto.jpg");
+			
 		} catch (AWTException e) {
 
 			e.printStackTrace();

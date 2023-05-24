@@ -15,7 +15,7 @@ public class ManageNewsTestCases extends BaseClass {
 	ManageNews mn;
 
 	@Test
-	public void f() {
+	public void verifyManageNewsAlertMessage() {
 		lp = new LoginPage(driver);
 		try {
 			lp.performLogin(ExcelRead.readStringData(1, 0, "Sheet1"), ExcelRead.readStringData(1, 1, "Sheet1"));

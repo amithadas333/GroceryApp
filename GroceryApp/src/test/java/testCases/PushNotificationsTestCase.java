@@ -12,7 +12,7 @@ public class PushNotificationsTestCase extends BaseClass {
 	LoginPage lp;
 	PushNotificationsClass pn;
 	GeneralUtilities gu = new GeneralUtilities();
-	RandomGenerator rg=new RandomGenerator();
+	RandomGenerator rg = new RandomGenerator();
 
 	@Test
 	public void verifyPushNotificationAlertMessage() {
@@ -22,9 +22,9 @@ public class PushNotificationsTestCase extends BaseClass {
 		lp.signIn();
 		pn = new PushNotificationsClass(driver);
 		pn.clickPushNotifications();
-		//pn.enterTitleDetails("Grocery"+Math.random()+"");
-		pn.enterTitleDetails("sampleDetails"+rg.getRandomstring(3));
-		
+		// pn.enterTitleDetails("Grocery"+Math.random()+"");
+		pn.enterTitleDetails("sampleDetails" + rg.getRandomstring(3));
+
 		pn.enterDescriptionDetails("this product is not available");
 		String actual = pn.clickOnSendButton();
 		String expected = "Send";
