@@ -129,10 +129,18 @@ public class GeneralUtilities {
 	public void mouseHover(WebDriver driver,WebElement click)
 	{
 		Actions obj=new Actions(driver);
-//		obj.contextClick().perform();
-//		obj.moveToElement(click).perform();
-		//obj.sendKeys(Keys.ARROW_DOWN).perform();
+
 		obj.moveToElement(click).perform();
 		
+	}
+	
+//	public void sendValues(WebElement element)
+//	{
+//		element.sendKeys("element");
+//	}
+
+	public void sendValues(String name,WebElement element) {
+		
+		element.sendKeys("name");
 	}
 }

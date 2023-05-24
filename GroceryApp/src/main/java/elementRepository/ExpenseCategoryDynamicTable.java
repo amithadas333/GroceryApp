@@ -23,16 +23,15 @@ public class ExpenseCategoryDynamicTable {
 
 	@FindBy(xpath = "//p[text()='Expense Category']")
 	WebElement clickExpenseCategory;
-	
+
 	@FindBy(xpath = "//a[@class='btn btn-rounded btn-danger']")
 	WebElement expense_Category_NewButton;
-	
+
 	@FindBy(xpath = "//input[@id='name']")
 	WebElement add_title;
-	
+
 	@FindBy(xpath = "//button[@name='Create']")
 	WebElement save_new_title;
-
 
 	@FindBy(xpath = "//input[@id='name']")
 	WebElement changeEditExpenseCategoryInformations;
@@ -53,7 +52,8 @@ public class ExpenseCategoryDynamicTable {
 
 	public void getFirstFiveTabelDetails() {
 		int rowValue = gu.clickdynamicTable(driver,
-				"//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[1]", "mysample0.07895375325109788");
+				"//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[1]",
+				"mysample0.07895375325109788");
 		String locator = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr[" + rowValue
 				+ "]//td[2]//a[1]";
 		WebElement printAllRowValues1 = driver.findElement(By.xpath(locator));
@@ -67,14 +67,15 @@ public class ExpenseCategoryDynamicTable {
 	}
 
 	public void editExpenseCategoryInformation(String changeTitle) {
-		changeEditExpenseCategoryInformations.sendKeys(changeTitle);
+
+		gu.sendValues(changeTitle, changeEditExpenseCategoryInformations);
 	}
-	public void newDetails()
-	{
+
+	public void newDetails() {
 		gu.getElementClick(expense_Category_NewButton);
-		add_title.sendKeys("mysample"+Math.random()+"");
+		add_title.sendKeys("mysample" + Math.random() + "");
 		gu.getElementClick(save_new_title);
-		
+
 	}
 
 	public void clickOnUpdate() {

@@ -56,7 +56,7 @@ public class SettingsManageMenu {
 
 	@FindBy(xpath = "//button[@name='create']")
 	WebElement clickSave;
-	
+
 	@FindBy(xpath = "//h5[text()=' Alert!']")
 	WebElement alertMessage;
 
@@ -74,7 +74,8 @@ public class SettingsManageMenu {
 	}
 
 	public void menuName(String name) {
-		menuName.sendKeys(name);
+
+		gu.sendValues(name, menuName);
 	}
 
 	public void clickParentMenu() {
@@ -82,28 +83,33 @@ public class SettingsManageMenu {
 	}
 
 	public void enterUrl(String url) {
-		Url.sendKeys(url);
+
+		gu.sendValues(url, Url);
 	}
 
 	public void enterFaIcon(String iconName) {
-		FaIcon.sendKeys(iconName);
+
+		gu.sendValues(iconName, FaIcon);
 	}
 
 	public void enterMenuOrder(String menu) {
-		menuOrder.sendKeys(menu);
+
+		gu.sendValues(menu, menuOrder);
 	}
 
 	public void enterTableName(String name) {
-		tableName.sendKeys(name);
-		// gu.getElementPageScroll(driver, 0, 2000);
+
+		gu.sendValues(name, tableName);
 	}
 
 	public void enterFileName(String name) {
-		fileName.sendKeys(name);
+
+		gu.sendValues(name, fileName);
 	}
 
 	public void enterColor(String enterColor) {
-		color.sendKeys(enterColor);
+
+		gu.sendValues(enterColor, color);
 		gu.getElementPageScroll(driver, 0, 600);
 	}
 
@@ -117,8 +123,8 @@ public class SettingsManageMenu {
 	public void clickSave() {
 		gu.getElementClick(clickSave);
 	}
-	public String getAlertMessage()
-	{
+
+	public String getAlertMessage() {
 		return gu.getElementText(alertMessage);
 	}
 }

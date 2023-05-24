@@ -71,15 +71,18 @@ public class HomePageSettings {
 	}
 
 	public void userName(String oldName) {
-		enterOldPassword.sendKeys(oldName);
+
+		gu.sendValues(oldName, enterOldPassword);
 	}
 
 	public void userNewPassword(String newName) {
-		enterNewPassword.sendKeys(newName);
+
+		gu.sendValues(newName, enterNewPassword);
 	}
 
 	public String confirmPasswordReEnter(String confirmNePassword) {
-		enterconfirmPassword.sendKeys(confirmNePassword);
+
+		gu.sendValues(confirmNePassword, enterconfirmPassword);
 		return gu.getElementText(changePassword);
 	}
 

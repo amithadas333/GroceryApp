@@ -63,7 +63,8 @@ public class ManageCategory {
 	}
 
 	public void enterTheCategory(String Category) {
-		enterCategory.sendKeys(Category);
+
+		gu.sendValues(Category, enterCategory);
 	}
 
 	public void clickOnGroup() throws InterruptedException {
