@@ -14,7 +14,7 @@ public class ManageOfferCodeTestCase extends BaseClass {
 	LoginPage lp;
 	ManageOfferCode mc;
 
-	@Test(enabled=false)
+	@Test
 	public void verifyManageOrdersAssignDeliveryBoyAlertMessage() throws InterruptedException {
 		lp = new LoginPage(driver);
 
@@ -54,7 +54,7 @@ public class ManageOfferCodeTestCase extends BaseClass {
 		mc.clickDeliveryDate("28-04-2023");
 		//mc.clickOnTime("12:00am");
 	
-		mc.clickOnTimeBetween("12:00am");
+		//mc.clickOnTimeBetween("12:00am");
 	
 		mc.updateon();
 

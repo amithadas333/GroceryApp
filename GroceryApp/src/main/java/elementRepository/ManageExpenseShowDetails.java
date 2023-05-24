@@ -63,7 +63,7 @@ public class ManageExpenseShowDetails {
 	public String show() {
 		int rowValue = gu.clickdynamicTable(driver,
 				"//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[1]",
-				"Order -704(User1-DB)");
+				"IceCreams (232-ST)");
 		String locator = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr[" + rowValue
 				+ "]//td[8]//a[1]";
 		WebElement printAllRowValues1 = driver.findElement(By.xpath(locator));
@@ -79,7 +79,7 @@ public class ManageExpenseShowDetails {
 	public WebElement getViewMoreelement() {
 		int rowValue = gu.clickdynamicTable(driver,
 				"//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[1]",
-				"Fruits1680451172 (Amalrajrc-AD)");
+				"NewFruit001 (Admin-AD)");
 		String locator = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr[" + rowValue
 				+ "]//td//div//a[1]";
 		WebElement Findelement = driver.findElement(By.xpath(locator));

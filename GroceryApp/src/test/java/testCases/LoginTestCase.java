@@ -12,7 +12,7 @@ import elementRepository.TestingLogin;
 public class LoginTestCase extends BaseClass {
 	TestingLogin tp;
 
-	@Test(dataProvider = "validUserLogin", dataProviderClass = DataProviderList.class)
+	@Test(dataProvider = "userLogin", dataProviderClass = DataProviderList.class)
 	public void verifySucessFullLogin(String type, String username, String password) throws IOException {
 
 		tp = new TestingLogin(driver);

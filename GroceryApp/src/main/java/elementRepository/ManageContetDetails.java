@@ -78,6 +78,7 @@ public class ManageContetDetails {
 
 		gu.getFileUpload(driver, chooseFile,
 				System.getProperty("user.dir") + "\\src\\main\\resources\\FileUpload\\istockphoto.jpg");
+		gu.mediumDelay();
 
 		
 

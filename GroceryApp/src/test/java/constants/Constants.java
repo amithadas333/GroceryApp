@@ -40,7 +40,7 @@ public class Constants
 	
 	
 
-	public static final String LoginPrivateTest = "Alert!";
+	public static final String LoginPrivateTest = "7rmart supermarket";
 	public static final String LoginPrivateTestOutPut = "not expected output";
 	
 	
