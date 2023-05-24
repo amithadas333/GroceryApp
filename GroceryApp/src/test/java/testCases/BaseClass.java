@@ -46,25 +46,25 @@ public class BaseClass {
 
 	}
 
-//	@BeforeMethod(alwaysRun = true)
-//	@Parameters("Browser")
-//	public void beforeMethod(String browser) throws IOException {
-//		if (browser.equals("chrome")) {
-//			testBasic();
-//			ChromeOptions ops = new ChromeOptions();
-//			ops.addArguments("--remote-allow-origins=*");
-//			driver = new ChromeDriver(ops);
-//		} else if (browser.equals("edge")) {
-//			EdgeOptions ops = new EdgeOptions();
-//			ops.addArguments("--remote-allow-origins=*");
-//			driver = new EdgeDriver(ops);
-//
-//			// driver = new EdgeDriver();
-//		}
-//		driver.get(prop.getProperty("BaseURL"));
-//		driver.manage().window().maximize();
-//		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
-//	}
+	@BeforeMethod(alwaysRun = true)
+	@Parameters("Browser")
+	public void beforeMethod(String browser) throws IOException {
+		if (browser.equals("chrome")) {
+			testBasic();
+			ChromeOptions ops = new ChromeOptions();
+			ops.addArguments("--remote-allow-origins=*");
+			driver = new ChromeDriver(ops);
+		} else if (browser.equals("edge")) {
+			EdgeOptions ops = new EdgeOptions();
+			ops.addArguments("--remote-allow-origins=*");
+			driver = new EdgeDriver(ops);
+
+			// driver = new EdgeDriver();
+		}
+		driver.get(prop.getProperty("BaseURL"));
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
+	}
 
 	@AfterMethod(alwaysRun = true)
 	public void afterMethod() {
