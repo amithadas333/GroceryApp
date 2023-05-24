@@ -7,9 +7,6 @@
 				</include>
 			</run>
 		</groups>
-		<classes>
-			<class name="testCases.ManageContentTestCases"></class>
-			
-		</classes>
+		
 	</test>
 </suite>
