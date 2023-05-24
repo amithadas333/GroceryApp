@@ -34,7 +34,7 @@ public class ManageLocation {
 	public String clickOnDelete() {
 
 		int rowValue = gu.clickdynamicTable(driver,
-				"//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[1]", "Yingside");
+				"//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[1]", "Shontastad");
 		String locator = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr[" + rowValue
 				+ "]//td[6]//a[2]";
 		WebElement printAllRowValues1 = driver.findElement(By.xpath(locator));

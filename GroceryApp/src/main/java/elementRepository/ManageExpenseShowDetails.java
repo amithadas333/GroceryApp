@@ -79,7 +79,7 @@ public class ManageExpenseShowDetails {
 	public WebElement getViewMoreelement() {
 		int rowValue = gu.clickdynamicTable(driver,
 				"//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[1]",
-				"NewFruit001 (Admin-AD)");
+				"Order -704(-DB)");
 		String locator = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr[" + rowValue
 				+ "]//td//div//a[1]";
 		WebElement Findelement = driver.findElement(By.xpath(locator));
@@ -88,7 +88,7 @@ public class ManageExpenseShowDetails {
 	}
 
 	public boolean click_Sub_Manageexpense_ViewMore_button() throws InterruptedException {
-		// gu.getElementPageScroll(driver, 0, 2000);
+		gu.getElementPageScroll(driver, 0, 2000);
 
 		getViewMoreelement().click();
 

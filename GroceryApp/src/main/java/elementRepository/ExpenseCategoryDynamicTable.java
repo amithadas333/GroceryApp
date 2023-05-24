@@ -53,7 +53,7 @@ public class ExpenseCategoryDynamicTable {
 	public void getFirstFiveTabelDetails() {
 		int rowValue = gu.clickdynamicTable(driver,
 				"//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[1]",
-				"mysample0.07895375325109788");
+				"mysample0.7373156785686894");
 		String locator = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr[" + rowValue
 				+ "]//td[2]//a[1]";
 		WebElement printAllRowValues1 = driver.findElement(By.xpath(locator));

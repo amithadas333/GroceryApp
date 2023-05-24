@@ -13,7 +13,7 @@ public class ManageContentTestCases extends BaseClass {
 	LoginPage lp;
 	ManageContent mc;
 
-	//@Test
+	@Test
 	public void verifyUpdateAlertMessage() throws InterruptedException, IOException {
 		lp = new LoginPage(driver);
 
