@@ -7,7 +7,7 @@
 		</groups>
 		<parameter name="Browser" value="chrome"></parameter>
 		<classes>
-			<class name="testCases.LoginTestCases"></class>
+			<class name="testCases.VerifyUsersTestCases"></class>
 		</classes>
 	</test>
 	<test name="Edge">
@@ -18,7 +18,7 @@
 		</groups>
 		<parameter name="Browser" value="edge"></parameter>
 		<classes>
-			<class name="testCases.LoginTestCases"></class>
+			<class name="testCases.VerifyUsersTestCases"></class>
 		</classes>
 	</test>
 </suite>
