@@ -72,7 +72,7 @@ public class ExtentReport implements ITestListener {
 		test = reports.createTest(result.getName());
 		test.log(Status.SKIP,
 				MarkupHelper.createLabel("Name of the skipped test case is : " + result.getName(), ExtentColor.YELLOW));
-
+		
 	}
 
 //	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {

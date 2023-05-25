@@ -53,7 +53,7 @@ public class BaseClass {
 //			testBasic();
 //			ChromeOptions ops = new ChromeOptions();
 //			ops.addArguments("--remote-allow-origins=*");
-//			driver = new ChromeDriver(ops);
+//			//driver = new ChromeDriver(ops);
 //		} else if (browser.equals("edge")) {
 //			EdgeOptions ops = new EdgeOptions();
 //			ops.addArguments("--remote-allow-origins=*");
