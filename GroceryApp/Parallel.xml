@@ -3,13 +3,13 @@
 		
 		<parameter name="Browser" value="chrome"></parameter>
 		<classes>
-			<class name="testCases.ManageLocationTestCases"></class>
+			<class name="testCases.AdminUsersTestCases"></class>
 		</classes>
 	</test>
 	<test name="Edgetest">
 		<parameter name="Browser" value="edge"></parameter>
 		<classes>
-			<class name="testCases.ManageLocationTestCases"></class>
+			<class name="testCases.AdminUsersTestCases"></class>
 		</classes>
 	</test>
 </suite>
