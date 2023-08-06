@@ -6,9 +6,9 @@ public class Constants
 
 	public static final String loginButtonBackgroundColor = "rgb(52, 58, 64)";// constant
 	public static final String error = "not expected output";
-
-	public static final String ManageExpenseViewMoreDynamicTableAlert = "List Expense";
-	public static final String output = "invalid text";
+//
+//	public static final String ManageExpenseViewMoreDynamicTableAlert = "List Expense";
+//	public static final String output = "invalid text";
 
 	public static final String AdminUsersAlertMessage = "Alert!";
 	public static final String errorMessage = "invalid text";

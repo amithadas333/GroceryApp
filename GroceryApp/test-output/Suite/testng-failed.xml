@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test(failed)">
+    <classes>
+      <class name="testCases.ManageContetDetailsTestCases">
+        <methods>
+          <include name="f"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases.ManageContetDetailsTestCases -->
+      <class name="testCases.PushNotificationsTestCase">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="verifyPushNotificationAlertMessage"/>
+        </methods>
+      </class> <!-- testCases.PushNotificationsTestCase -->
+      <class name="testCases.HomePageSettingsTestCases">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifyNewPasswordDetails"/>
+          <include name="verifyHomePageChangePasswordPageText"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases.HomePageSettingsTestCases -->
+      <class name="testCases.ManageSliderTestCases">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="verifyManageSliderAlertMessage"/>
+        </methods>
+      </class> <!-- testCases.ManageSliderTestCases -->
+      <class name="testCases.VerifyUsersTestCases">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="verifyUsersIsClickable"/>
+        </methods>
+      </class> <!-- testCases.VerifyUsersTestCases -->
+      <class name="testCases.ManageProductTestCases">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifyManageProductButtonColor"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases.ManageProductTestCases -->
+      <class name="testCases.ManageExpenseTestCases">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifyAddExpenseText"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases.ManageExpenseTestCases -->
+      <class name="testCases.ManageExpenseDynamicTableTestCases">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifyThatEditExpenseCategoryTitleAlert"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases.ManageExpenseDynamicTableTestCases -->
+      <class name="testCases.LoginTestCases">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifySucessFullLogin"/>
+          <include name="beforeMethod"/>
+          <include name="verifyLoginButtonText"/>
+          <include name="verifyLoginBackgroundColor"/>
+        </methods>
+      </class> <!-- testCases.LoginTestCases -->
+      <class name="testCases.ManageLocationTestCases">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifyManageLocationAlertMessage"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases.ManageLocationTestCases -->
+      <class name="testCases.AdminUsersTestCases">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="verifyAdminUsersAlertMessage"/>
+        </methods>
+      </class> <!-- testCases.AdminUsersTestCases -->
+      <class name="testCases.ManageUsersTestCase">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifyManageUserAlertMessage"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases.ManageUsersTestCase -->
+      <class name="testCases.ManageContentTestCases">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="verifyUpdateAlertMessage"/>
+        </methods>
+      </class> <!-- testCases.ManageContentTestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
